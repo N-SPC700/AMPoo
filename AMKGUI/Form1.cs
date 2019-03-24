@@ -21,7 +21,10 @@ namespace AMKGUI
 		public Form1()
 		{
 			InitializeComponent();
-			minimalErrorFormHeight = Height + 100;
+
+            textBox1.Text = "Waiting for response.";
+
+            minimalErrorFormHeight = Height + 100;
 			normalErrorFormHeight = Height;
 		}
 
@@ -219,9 +222,7 @@ namespace AMKGUI
 				{
 					amk.StartInfo.Arguments = "-norom \"" + localSongs.fileNames[listBox2.SelectedIndex + globalSongs.fileNames.Count] + "\"";
 				}
-
-				if (verboseAMKCheckBox.Checked == true)
-					amk.StartInfo.Arguments += " -v";
+                
 
 				amk.StartInfo.Arguments += " -noblock";
 
@@ -531,6 +532,16 @@ namespace AMKGUI
                 return;
             }
             textBox1.Text = "Did not convert anything.";
+
+        }
+
+        private void verboseAMKCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

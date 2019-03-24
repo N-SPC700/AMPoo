@@ -1314,6 +1314,7 @@ void fixMusicPointers()
 			if (checkPos > 0x10000)
 			{
 				std::cerr << musics[i].name << ": Echo buffer exceeded total space in ARAM by 0x" << hex4 << checkPos - 0x10000 << " bytes. Will crash on accurate emulators." << std::dec << std::endl;
+				std::cout << musics[i].name << " exceeds Echo buffer. Will crash on accurate emulators." << std::endl;
 				//quit(1);
 			}
 	
