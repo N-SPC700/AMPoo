@@ -1,0 +1,11 @@
+C:\Users\rikir\Desktop\super josexi world 2\AddmusicK Source Code\Debug\AMKGUI.exe.config
+C:\Users\rikir\Desktop\super josexi world 2\AddmusicK Source Code\Debug\AMKGUI.exe
+C:\Users\rikir\Desktop\super josexi world 2\AddmusicK Source Code\Debug\AMKGUI.pdb
+C:\Users\rikir\Desktop\super josexi world 2\AddmusicK Source Code\AMKGUI\obj\Debug\AMKGUI.csprojAssemblyReference.cache
+C:\Users\rikir\Desktop\super josexi world 2\AddmusicK Source Code\AMKGUI\obj\Debug\AMKGUI.Form1.resources
+C:\Users\rikir\Desktop\super josexi world 2\AddmusicK Source Code\AMKGUI\obj\Debug\AMKGUI.Properties.Resources.resources
+C:\Users\rikir\Desktop\super josexi world 2\AddmusicK Source Code\AMKGUI\obj\Debug\AMKGUI.ResultForm.resources
+C:\Users\rikir\Desktop\super josexi world 2\AddmusicK Source Code\AMKGUI\obj\Debug\AMKGUI.csproj.GenerateResource.cache
+C:\Users\rikir\Desktop\super josexi world 2\AddmusicK Source Code\AMKGUI\obj\Debug\AMKGUI.csproj.CoreCompileInputs.cache
+C:\Users\rikir\Desktop\super josexi world 2\AddmusicK Source Code\AMKGUI\obj\Debug\AMKGUI.exe
+C:\Users\rikir\Desktop\super josexi world 2\AddmusicK Source Code\AMKGUI\obj\Debug\AMKGUI.pdb
