@@ -520,7 +520,7 @@ namespace AMKGUI
 
                 app.StartInfo.FileName = listFolderPath + "brr_encoder.exe";
 
-                string file = (openFileDialog.FileName).Replace('\\', '/');
+                string file = "\"" + (openFileDialog.FileName).Replace('\\', '/') + "\"";
 
                 app.StartInfo.Arguments = "-sc16000 " + file + " " + file + ".brr";
 
