@@ -46,6 +46,7 @@
             this.porterModeCheckBox = new System.Windows.Forms.CheckBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
@@ -54,6 +55,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -174,9 +177,9 @@
             // button5
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button5.Location = new System.Drawing.Point(204, 381);
+            this.button5.Location = new System.Drawing.Point(307, 403);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(71, 23);
+            this.button5.Size = new System.Drawing.Size(168, 23);
             this.button5.TabIndex = 2;
             this.button5.Text = "Run";
             this.button5.UseVisualStyleBackColor = true;
@@ -248,6 +251,9 @@
             // 
             // splitContainer2.Panel1
             // 
+            this.splitContainer2.Panel1.Controls.Add(this.checkBox2);
+            this.splitContainer2.Panel1.Controls.Add(this.label4);
+            this.splitContainer2.Panel1.Controls.Add(this.textBox2);
             this.splitContainer2.Panel1.Controls.Add(this.button9);
             this.splitContainer2.Panel1.Controls.Add(this.label1);
             this.splitContainer2.Panel1.Controls.Add(this.label3);
@@ -273,12 +279,21 @@
             this.splitContainer2.SplitterDistance = 478;
             this.splitContainer2.TabIndex = 9;
             // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox2.Location = new System.Drawing.Point(6, 383);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(91, 20);
+            this.textBox2.TabIndex = 12;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // button9
             // 
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button9.Location = new System.Drawing.Point(65, 381);
+            this.button9.Location = new System.Drawing.Point(103, 381);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(133, 23);
+            this.button9.Size = new System.Drawing.Size(114, 23);
             this.button9.TabIndex = 11;
             this.button9.Text = "WAV To BRR utility";
             this.button9.UseVisualStyleBackColor = true;
@@ -287,16 +302,16 @@
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label3.Location = new System.Drawing.Point(124, 407);
+            this.label3.Location = new System.Drawing.Point(223, 381);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(230, 18);
+            this.label3.Size = new System.Drawing.Size(78, 45);
             this.label3.TabIndex = 8;
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button7
             // 
             this.button7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button7.Location = new System.Drawing.Point(281, 381);
+            this.button7.Location = new System.Drawing.Point(307, 380);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(168, 23);
             this.button7.TabIndex = 5;
@@ -370,6 +385,28 @@
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 408);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(132, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Sample rate of BRR (in hz)";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(141, 407);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(76, 17);
+            this.checkBox2.TabIndex = 14;
+            this.checkBox2.Text = "Loop BRR";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
             // Form1
             // 
             this.AcceptButton = this.button5;
@@ -425,6 +462,9 @@
 		private System.Windows.Forms.Button button11;
 		private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
 

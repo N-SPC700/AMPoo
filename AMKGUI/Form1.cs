@@ -521,8 +521,11 @@ namespace AMKGUI
                 app.StartInfo.FileName = listFolderPath + "brr_encoder.exe";
 
                 string file = "\"" + (openFileDialog.FileName).Replace('\\', '/') + "\"";
-
-                app.StartInfo.Arguments = "-sc16000 " + file + " " + file + ".brr";
+                string loopedB = " ";
+                if (checkBox2.Checked)
+                    loopedB = " -l ";
+       
+                app.StartInfo.Arguments = "-sc" + textBox2.Text + loopedB + file + " " + file + ".brr";
 
                 app.StartInfo.WorkingDirectory = listFolderPath;
 
@@ -541,6 +544,21 @@ namespace AMKGUI
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
